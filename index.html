@@ -1,50 +1,94 @@
-
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Repido</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
-      text-align: center;
-      padding: 60px 20px;
-    }
-    .logo {
-      max-width: 400px;
-      width: 90%;
-    }
-    h1 {
-      font-size: 2em;
-      margin-top: 40px;
-      color: #333;
-    }
-    p {
-      color: #666;
-      font-size: 1.1em;
-      max-width: 500px;
-      margin: auto;
-    }
-    .contact {
-      margin-top: 30px;
-      font-weight: bold;
-    }
-    a {
-      color: #3366cc;
-      text-decoration: none;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repido – Hjälp i vardagen</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            padding: 1rem 2rem;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        header img {
+            height: 50px;
+        }
+        main {
+            padding: 2rem;
+            max-width: 800px;
+            margin: auto;
+        }
+        h1, h2 {
+            color: #d6287d;
+        }
+        .cta-knapp {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.75rem 1.5rem;
+            background: linear-gradient(to right, #ff6a00, #ee0979);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        section {
+            margin-bottom: 2.5rem;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            background-color: #eee;
+            color: #555;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 0.5rem;
+        }
+    </style>
 </head>
 <body>
-  <img src="repido_logo_web.png" alt="Repido logotyp" class="logo">
-  <h1>Välkommen till Repido</h1>
-  <p>Jag hjälper dig att felsöka och laga vardagliga saker – från glappande lampor till trilskande trädgårdsmaskiner. Kvällar och helger, snabbt och enkelt.</p>
-  <div class="contact">
-    📩 Kontakta mig via Facebook:<br>
-    <a href="https://www.facebook.com/Repidoservice" target="_blank">facebook.com/Repidoservice</a>
-  </div>
+    <header>
+        <img src="repido-logo.png" alt="Repido logotyp">
+    </header>
+    <main>
+        <section id="hero">
+            <h1>Repido – Hjälp i vardagen</h1>
+            <p>Jag hjälper privatpersoner i Trelleborg med omnejd med montering, enklare elinstallationer, reparationer och annat praktiskt. Hobbyverksamhet med fakturering via tjänst.</p>
+            <a href="#kontakt" class="cta-knapp">Kontakta mig</a>
+        </section>
+        <section id="tjanster">
+            <h2>Tjänster</h2>
+            <ul>
+                <li>Montering av möbler, hyllor, gardinstänger m.m.</li>
+                <li>Installation av lampor och enklare eljobb (ej certifierat arbete)</li>
+                <li>Felsökning och enklare reparationer av elverktyg och småmotorer</li>
+                <li>Praktisk hjälp i hemmet</li>
+            </ul>
+        </section>
+        <section id="priser">
+            <h2>Priser</h2>
+            <p>Startavgift: <strong>400 kr</strong> (första timmen), därefter <strong>300 kr/h</strong>. Materialpåslag: 10%.</p>
+            <p>Betalning sker via faktura. Kilometerkostnad kan tillkomma utanför Trelleborg tätort.</p>
+        </section>
+        <section id="kontakt">
+            <h2>Kontakt</h2>
+            <p>Skicka ett mejl till <a href="mailto:hej@repido.se">hej@repido.se</a> eller skriv via <a href="https://www.facebook.com/repido.se" target="_blank">Facebook</a>.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Repido – Vardagshjälp i Trelleborg</p>
+    </footer>
 </body>
 </html>
